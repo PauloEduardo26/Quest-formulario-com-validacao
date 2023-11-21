@@ -1,0 +1,94 @@
+body{
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    background: url(../images/bg-repeat.jpg) repeat-x;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain        
+}
+body .titulo{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 145px 10px;
+    margin-left: 50px;
+    justify-content: center;
+    color: white;
+}
+body div h1{
+    font-size: 20px;
+    font-weight: 900;
+}
+body div h2{
+    margin-top: 11px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.fundo{
+    background-color: #ffffff;
+    height: 378px;
+    width: 340px;
+    margin: 12px 50px;
+    padding: 20px;
+}
+
+.fundo .campos .campo{
+    margin-bottom: 15px;
+    position: relative;
+}
+.fundo .campos .campo:last-child{
+    margin-bottom: 7px
+}
+.fundo .campos .campo-nao-preenchido:after{
+    content: "campo obrigatório";
+    color: #F52E2E;
+    font-size: 8px;
+    font-weight: 400;
+    position: absolute;
+    display: block;
+}
+.fundo .campos .campo-nao-preenchido:last-child{
+    margin-bottom: 15px;
+}
+
+.fundo .campos input{
+    font-weight: 700;  
+    font-size: 15px;
+    width: 100%;
+    color: black; 
+    padding: 9px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+.fundo .campos .campo .mensagem{
+    height: 100px;
+}
+.fundo .enviar{
+    height: 42px;
+    width: 300px;
+    margin-top: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fundo .enviar button{
+    border: none;
+    color: white;
+    background-color:#3CCC87;
+    font-weight: 700;     
+    border-radius: 5px;  
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.campo-preenchido input{
+	border: solid 1px #00C22B;
+}
+.campo-nao-preenchido input{
+	border: solid 1px #F52E2E;
+}
